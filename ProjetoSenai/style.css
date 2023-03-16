@@ -1,12 +1,18 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
+
+p {
+    margin-bottom: 0px !important;
+}
+
 :root{
-    --cor-topo:#FFF159;
+    --cor-topo:#FFF160;
     --cor-preta: #0000;
     --cor-branca:#ffff;
     --cor-cinza: #F4F1EB;
+    --cor-vermelho:#004AAD;
 
 }
 
@@ -40,9 +46,11 @@ header .NavHeader a {
 }
 
 header .NavHeader a:hover {
-    background-color: var(--cor-preta);
-    padding: 20px;
+    background-color: var(--cor-vermelho);
+    border-radius: 20px;
+    padding: 15px;
     color: var(--cor-branca);
+    border-radius: 20px;
 }
 
 
@@ -75,9 +83,91 @@ header .NavHeader a:hover {
 
   /* PESQUISAS */
   
-  main .imagens{
+main .imagens{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     padding: 25px;
     background-color: var(--cor-cinza);
-  }
+}
+
+/* OFERTAS */
+.promo, .promocao{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+} 
+
+
+.promo div, .promocao div{
+    border: solid black 2px;
+    padding: 20px;
+    border-radius: 20px 1px;
+}
+
+.promo button, .promocao button{
+    background-color: var(--cor-vermelho);
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 15px;
+}
+
+.ofertas, .fritadeira, .camera, .labtop, .cadeira, .meia, .promocao, .caixa, .televisao, .celulardois, .calca{
+    padding: 25px; 
+}
+
+.ofertas p, .promocao p{
+    color: green;
+} 
+
+.ofertas h7, .promocao h7{
+    color:dimgrey;
+} 
+
+.promocao img{
+    width: 190px;
+}
+
+.compra{
+    padding: 15px;
+}
+
+.letrinha{
+    text-align: center;
+}
+
+/* OFERTAS DO DIA */
+
+main .ofertasdodia{
+    background-color: var(--cor-cinza);
+    text-align: center;
+    font-size: 5px;
+    padding: 10px;
+}
+
+main .imagensdois{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 25px;
+    background-color: var(--cor-cinza);
+}
+
+/* ------------FOLTER----------- */
+
+.textdireita{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+
+}
+
+
+footer{
+    background-color: var(--cor-topo);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    background-image: url(img/rodape.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
