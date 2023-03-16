@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin-bottom: 0px !important;
+}
+
+:root{
+    --cor-topo:#FFF160;
+    --cor-preta: #0000;
+    --cor-branca:#ffff;
+    --cor-cinza: #F4F1EB;
+    --cor-vermelho:#004AAD;
+
+}
+
+header {
+    background-color: var(--cor-topo);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
+header img{
+    width: 150px
+}
+
+
+header .NavHeader {
+    justify-content: end;
+    display: flex;
+    align-items: center;
+}
+
+header .NavHeader a{
+    font-size: 15px;
+}
+    
+header .NavHeader a {
+    text-decoration: none;
+    color: var(--cor-preto);
+    padding: 15px;
+}
+
+header .NavHeader a:hover {
+    background-color: var(--cor-vermelho);
+    border-radius: 20px;
+    padding: 15px;
+    color: var(--cor-branca);
+    border-radius: 20px;
+}
+
+
+/* BARRA DE PESQUISA */
+.container-input {
+    position: relative;
+  }
+  
+  .input {
+    width: 150px;
+    padding: 10px 0px 10px 40px;
+    border-radius: 9999px;
+    border: solid 1px #333;
+    transition: all .2s ease-in-out;
+    outline: none;
+    opacity: 0.8;
+  }
+  
+  .container-input svg {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+  }
+  
+  .input:focus {
+    opacity: 1;
+    width: 250px;
+  }
+
+  /* PESQUISAS */
+  
+main .imagens{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 25px;
+    background-color: var(--cor-cinza);
+}
+
+/* OFERTAS */
+.promo, .promocao{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+} 
+
+
+.promo div, .promocao div{
+    border: solid black 2px;
+    padding: 20px;
+    border-radius: 20px 1px;
+}
+
+.promo button, .promocao button{
+    background-color: var(--cor-vermelho);
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 15px;
+}
+
+.ofertas, .fritadeira, .camera, .labtop, .cadeira, .meia, .promocao, .caixa, .televisao, .celulardois, .calca{
+    padding: 25px; 
+}
+
+.ofertas p, .promocao p{
+    color: green;
+} 
+
+.ofertas h7, .promocao h7{
+    color:dimgrey;
+} 
+
+.promocao img{
+    width: 190px;
+}
+
+.compra{
+    padding: 15px;
+}
+
+.letrinha{
+    text-align: center;
+}
+
+/* OFERTAS DO DIA */
+
+main .ofertasdodia{
+    background-color: var(--cor-cinza);
+    text-align: center;
+    font-size: 5px;
+    padding: 10px;
+}
+
+main .imagensdois{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 25px;
+    background-color: var(--cor-cinza);
+}
+
+/* ------------FOLTER----------- */
+
+.textdireita{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+
+}
+
+
+footer{
+    background-color: var(--cor-topo);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    background-image: url(img/rodape.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
