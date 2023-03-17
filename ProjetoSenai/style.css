@@ -81,7 +81,7 @@ header .NavHeader a:hover {
     width: 250px;
   }
 
-  /* PESQUISAS */
+ /* ------------PESQUISA----------- */
   
 main .imagens{
     display: grid;
@@ -90,7 +90,7 @@ main .imagens{
     background-color: var(--cor-cinza);
 }
 
-/* OFERTAS */
+/* ------------OFERTAS----------- */
 .promo, .promocao{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -112,7 +112,9 @@ main .imagens{
     border-radius: 15px;
 }
 
-.ofertas, .fritadeira, .camera, .labtop, .cadeira, .meia, .promocao, .caixa, .televisao, .celulardois, .calca{
+.ofertas, .fritadeira, .camera, .labtop, .cadeira,
+.meia, .promocao, .caixa, .televisao,
+.celulardois, .calca{
     padding: 25px; 
 }
 
@@ -170,4 +172,31 @@ footer{
     background-position: left top;
     background-repeat: no-repeat;
     background-size: 50%;
+}
+
+/* ------------PÁGINA LOGIN----------- */
+
+.formulario-form form input{
+    display: block; 
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--cor-topo);
+    border-radius: 10px;
+    width: 350px;
+    margin-bottom: 10px;
+    margin: 10px auto;
+}
+
+.formulario-form button{
+    background-color: var(--cor-vermelho);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+
+}
+
+.formulario{
+    text-align: center;
 }
