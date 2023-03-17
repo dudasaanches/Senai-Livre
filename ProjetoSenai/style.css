@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 p {
@@ -54,7 +56,7 @@ header .NavHeader a:hover {
 }
 
 
-/* BARRA DE PESQUISA */
+/* ---------BARRA DE PESQUISA---------- */
 .container-input {
     position: relative;
   }
@@ -200,3 +202,91 @@ footer{
 .formulario{
     text-align: center;
 }
+
+.formulario-title{
+    padding: 10px;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* ------------CARRINHO----------- */
+
+.header-carrinho {
+    background-color: var(--cor-cabecalho);
+    padding: 15px;
+    color: var(--cor-preta);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr
+}
+
+#main-carrinho {
+    padding: 20px;
+}
+
+#main-carrinho .partedecima {
+    text-align: center;
+    padding: 20px;
+}
+
+#main-carrinho .carrinho {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+#main-carrinho .carrinho .parteum .sacola {
+    display: flex;
+    justify-content: space-between;
+    background-color: #D9D9D9;
+    padding: 5px;
+}
+
+#main-carrinho .carrinho .parteum .sacola .localizacao {
+    display: flex;
+    justify-content: center;
+}
+
+#main-carrinho .carrinho .parteum table {
+    width: 100%;
+    height: 100%;
+}
+
+#main-carrinho .carrinho .parteum .imagem {
+    text-align: center;
+}
+
+#main-carrinho .carrinho .parteum .imagem img {
+    width: 280px;
+    padding: 5px;
+}
+
+#main-carrinho .carrinho .dupla {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+#main-carrinho .carrinho .dupla .pedido {
+    background-color: #D9D9D9;
+    padding: 20px;
+    text-align: center;
+}
+
+#main-carrinho .carrinho .dupla .pedido button {
+    background-color: var(--cor-vermelho);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+}
+
+#main-carrinho .carrinho .dupla .pagamento {
+    background-color: #D9D9D9;
+    padding: 20px;
+}
+
+/* ------------FRITADEIRA----------- */
+ 
